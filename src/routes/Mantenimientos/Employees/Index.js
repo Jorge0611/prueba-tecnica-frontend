@@ -20,7 +20,7 @@ const Employees = () => {
     <div>
       <div>
         <Link className="btn btn-primary" to="./new">
-          <i class="bi bi-plus-lg me-2" />
+          <i className="bi bi-plus-lg me-2" />
           Nuevo empleado
         </Link>
       </div>

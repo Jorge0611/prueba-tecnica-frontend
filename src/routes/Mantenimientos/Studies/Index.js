@@ -20,7 +20,7 @@ const Studies = () => {
     <div>
       <div>
         <Link className="btn btn-primary" to="./new">
-          <i class="bi bi-plus-lg me-2" />
+          <i className="bi bi-plus-lg me-2" />
           Nuevo estudio
         </Link>
       </div>
@@ -35,19 +35,6 @@ const Studies = () => {
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <th scope="row">1</th>
-              <td>Mark</td>
-              <td>Ingeniero</td>
-              <td>
-                <button className="btn btn-warning me-2">
-                  <i className="bi bi-pencil-square" />
-                </button>
-                <button className="btn btn-danger">
-                  <i className="bi bi-trash" />
-                </button>
-              </td>
-            </tr>
             {data.map((value, key) => (
               <tr key={`Depto-row-${key}`}>
                 <th scope="row">{value.id}</th>

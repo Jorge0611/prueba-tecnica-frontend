@@ -1,12 +1,13 @@
+import { Link } from "react-router-dom";
 const Navbar = ({ children }) => {
   return (
     <div>
       <div className="d-print-none">
         <nav className="navbar navbar-expand-lg navbar-light bg-primary">
           <div className="container-fluid">
-            <a className="navbar-brand text-light" href="/">
+            <Link to="/" className="navbar-brand text-light">
               Company
-            </a>
+            </Link>
             <button
               className="navbar-toggler"
               type="button"
@@ -36,19 +37,28 @@ const Navbar = ({ children }) => {
                     aria-labelledby="navbarDropdownMenuLink"
                   >
                     <li>
-                      <a className="dropdown-item" href="/departments">
+                      <Link
+                        className="dropdown-item"
+                        to="/mantenimientos/departments"
+                      >
                         Departamentos
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a className="dropdown-item" href="/studies">
+                      <Link
+                        className="dropdown-item"
+                        to="/mantenimientos/studies"
+                      >
                         Estudios
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a className="dropdown-item" href="/employees">
+                      <Link
+                        className="dropdown-item"
+                        to="/mantenimientos/departments"
+                      >
                         Empleados
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </li>
@@ -68,17 +78,17 @@ const Navbar = ({ children }) => {
                     aria-labelledby="navbarDropdownMenuLink"
                   >
                     <li>
-                      <a
+                      <Link
                         className="dropdown-item"
-                        href="/movimientos-empleados"
+                        to="/movimientos-empleados"
                       >
                         Movimientos de empleados
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a className="dropdown-item" href="/salida-empleados">
+                      <Link className="dropdown-item" to="/salida-empleados">
                         Salida de empleados
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </li>
@@ -98,25 +108,25 @@ const Navbar = ({ children }) => {
                     aria-labelledby="navbarDropdownMenuLink"
                   >
                     <li>
-                      <a
+                      <Link
                         className="dropdown-item"
-                        href="/listado-empleados-fecha"
+                        to="/reportes/listado-empleados-fecha"
                       >
                         Listado de empleados por fecha entrada
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a className="dropdown-item" href="/listado-nomina">
+                      <Link className="dropdown-item" to="/listado-nomina">
                         Listado nomina
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         className="dropdown-item"
-                        href="/listado-recibos-empleados"
+                        to="/reportes/listado-recibos-empleados"
                       >
                         Listado de recibos empleados
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </li>
